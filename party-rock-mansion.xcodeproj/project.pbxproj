@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		58A00E221DB426F300A50766 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A00E211DB426F300A50766 /* AppDelegate.swift */; };
-		58A00E241DB426F300A50766 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A00E231DB426F300A50766 /* ViewController.swift */; };
+		58A00E241DB426F300A50766 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A00E231DB426F300A50766 /* MainVC.swift */; };
 		58A00E271DB426F300A50766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58A00E251DB426F300A50766 /* Main.storyboard */; };
 		58A00E2A1DB426F300A50766 /* party_rock_mansion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58A00E281DB426F300A50766 /* party_rock_mansion.xcdatamodeld */; };
 		58A00E2C1DB426F300A50766 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58A00E2B1DB426F300A50766 /* Assets.xcassets */; };
 		58A00E2F1DB426F300A50766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58A00E2D1DB426F300A50766 /* LaunchScreen.storyboard */; };
+		58A00E3A1DB42AC100A50766 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58A00E391DB42AC100A50766 /* still time.ttf */; };
+		58A00E3D1DB42B7300A50766 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A00E3C1DB42B7300A50766 /* VideoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		58A00E1E1DB426F300A50766 /* party-rock-mansion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "party-rock-mansion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58A00E211DB426F300A50766 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		58A00E231DB426F300A50766 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58A00E231DB426F300A50766 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		58A00E261DB426F300A50766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58A00E291DB426F300A50766 /* party_rock_mansion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = party_rock_mansion.xcdatamodel; sourceTree = "<group>"; };
 		58A00E2B1DB426F300A50766 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58A00E2E1DB426F300A50766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58A00E301DB426F300A50766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58A00E391DB42AC100A50766 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
+		58A00E3C1DB42B7300A50766 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		58A00E201DB426F300A50766 /* party-rock-mansion */ = {
 			isa = PBXGroup;
 			children = (
+				58A00E3B1DB42ACC00A50766 /* Resources */,
+				58A00E381DB427D600A50766 /* Model */,
+				58A00E371DB427D100A50766 /* View */,
+				58A00E361DB427CC00A50766 /* Controller */,
 				58A00E211DB426F300A50766 /* AppDelegate.swift */,
-				58A00E231DB426F300A50766 /* ViewController.swift */,
-				58A00E251DB426F300A50766 /* Main.storyboard */,
 				58A00E2B1DB426F300A50766 /* Assets.xcassets */,
-				58A00E2D1DB426F300A50766 /* LaunchScreen.storyboard */,
 				58A00E301DB426F300A50766 /* Info.plist */,
 				58A00E281DB426F300A50766 /* party_rock_mansion.xcdatamodeld */,
 			);
 			path = "party-rock-mansion";
+			sourceTree = "<group>";
+		};
+		58A00E361DB427CC00A50766 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				58A00E231DB426F300A50766 /* MainVC.swift */,
+				58A00E3C1DB42B7300A50766 /* VideoVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		58A00E371DB427D100A50766 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58A00E251DB426F300A50766 /* Main.storyboard */,
+				58A00E2D1DB426F300A50766 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		58A00E381DB427D600A50766 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		58A00E3B1DB42ACC00A50766 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				58A00E391DB42AC100A50766 /* still time.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58A00E2F1DB426F300A50766 /* LaunchScreen.storyboard in Resources */,
+				58A00E3A1DB42AC100A50766 /* still time.ttf in Resources */,
 				58A00E2C1DB426F300A50766 /* Assets.xcassets in Resources */,
 				58A00E271DB426F300A50766 /* Main.storyboard in Resources */,
 			);
@@ -140,7 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58A00E241DB426F300A50766 /* ViewController.swift in Sources */,
+				58A00E3D1DB42B7300A50766 /* VideoVC.swift in Sources */,
+				58A00E241DB426F300A50766 /* MainVC.swift in Sources */,
 				58A00E2A1DB426F300A50766 /* party_rock_mansion.xcdatamodeld in Sources */,
 				58A00E221DB426F300A50766 /* AppDelegate.swift in Sources */,
 			);
