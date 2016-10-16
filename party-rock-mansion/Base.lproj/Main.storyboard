@@ -145,14 +145,29 @@
                                     <constraint firstAttribute="height" constant="219" id="BKi-Kt-O9e"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sD2-Um-f8c">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="kqG-5a-jJe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="sD2-Um-f8c" firstAttribute="leading" secondItem="ia4-Gn-5dw" secondAttribute="leadingMargin" id="1wS-x4-06S"/>
+                            <constraint firstItem="sD2-Um-f8c" firstAttribute="top" secondItem="bca-di-Nba" secondAttribute="bottom" constant="92" id="GFX-Mw-xUK"/>
+                            <constraint firstItem="sD2-Um-f8c" firstAttribute="trailing" secondItem="ia4-Gn-5dw" secondAttribute="trailingMargin" id="Gku-P3-F9V"/>
                             <constraint firstItem="bca-di-Nba" firstAttribute="leading" secondItem="ia4-Gn-5dw" secondAttribute="leading" id="IAV-3t-by5"/>
                             <constraint firstItem="bca-di-Nba" firstAttribute="top" secondItem="ia4-Gn-5dw" secondAttribute="top" id="RhM-N1-ibQ"/>
                             <constraint firstAttribute="trailing" secondItem="bca-di-Nba" secondAttribute="trailing" id="Z9g-T5-enp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="sD2-Um-f8c" id="jbY-Cu-hRp"/>
+                        <outlet property="webView" destination="bca-di-Nba" id="OHB-Uq-42H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rlu-gw-3IY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

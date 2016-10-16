@@ -23,6 +23,20 @@ class PartyCell: UITableViewCell {
     //#MARK: Functions
     func updateUI(with: MusicVideo) {
         videoLbl.text = with.videoTitle
-        //TODO: SET IMAGE FROM URL
+        
+        let url = URL(string: with.imageURL)!
+        
+        DispatchQueue.global().async {
+            
+            do {
+                let data = try Data(contentsOf: url)
+                DispatchQueue.global().sync {
+                    self.previewImg.image = UIImage(data: data)
+                }
+            } catch  {
+                //handle the error
+            }
+            
+        }
     }
 }

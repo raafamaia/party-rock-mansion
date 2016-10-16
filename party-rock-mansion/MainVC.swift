@@ -61,6 +61,18 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return musicVideos.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let musicVideo = musicVideos[indexPath.row]
+        performSegue(withIdentifier: "VideoVC", sender: musicVideo)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? VideoVC  {
+            if let musicVideo = sender as? MusicVideo {
+                destination.musicVideo = musicVideo
+            }
+        }
+    }
     
 }
 

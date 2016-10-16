@@ -10,9 +10,24 @@ import UIKit
 
 class VideoVC: UIViewController {
 
+    @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var titleLbl: UILabel!
+    
+    private var _musicVideo: MusicVideo!
+    var musicVideo: MusicVideo {
+        get {
+            return _musicVideo
+        }
+        
+        set {
+            _musicVideo = newValue
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        titleLbl.text = musicVideo.videoTitle
+        webView.loadHTMLString(musicVideo.videoURL, baseURL: nil)
     }
 
     /*
